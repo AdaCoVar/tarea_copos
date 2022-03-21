@@ -54,6 +54,29 @@ class Lienzo(main:MainActivity): View(main) {
         canvas.drawOval(450f,630f,600f,720f, paint)
         canvas.drawOval(450f,560f,600f,650f,paint)
 
+        //arbol 2
+        paint.color = Color.rgb(180,114,20)
+        paint.style=Paint.Style.FILL
+//        tronco
+        canvas.drawRect(800f,700f,850f,800f,paint)
+        paint.color = Color.GREEN
+        canvas.drawOval(750f,630f,900f,720f, paint)
+        canvas.drawOval(750f,560f,900f,650f,paint)
+
+//        casita
+        paint.color = Color.rgb(180, 124, 75) // color madera
+        canvas.drawRect(200f, 900f, 500f, 1100f, paint)
+
+
+        paint.color = Color.WHITE //techo
+        canvas.drawRect(190f, 770f, 510f, 900f, paint)
+
+       paint.color = Color.RED //chimenea
+        canvas.drawRect(200f,790f,250f,720f,paint)
+
+        paint.color = Color.RED //puerta
+        canvas.drawRect(230f,930f,330f,1100f,paint)
+
 
 //        luna
         paint.color = Color.WHITE
