@@ -12,7 +12,7 @@ class Copos (este:Lienzo) {
 
 //    iniciamos variables
     init{
-
+//    con resolucion
         posx= (Math.random()*2100).toFloat()
 //    como vamos de arriba a abajo
       posy = ((Math.random()*2500)*-1).toFloat()
@@ -20,7 +20,7 @@ class Copos (este:Lienzo) {
     }
 
     fun caer(){
-        posy+=cop
+        posy+=((Math.random()*5)+5).toFloat()
         if(posy>1000) posy =((Math.random()*1920)*-1).toFloat()
     }
 

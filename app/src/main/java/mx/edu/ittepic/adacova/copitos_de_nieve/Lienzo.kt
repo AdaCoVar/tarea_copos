@@ -91,14 +91,26 @@ class Lienzo(main:MainActivity): View(main) {
 
 //    dibujaos copitos e incrementamos la nevada
     fun dibujar(canvas:Canvas){
-        if(contador>=0&&contador<1000){
+        if(contador>=0&&contador<400){
             (0..uno).forEach{
                 copitos[it].caer()
                 copitos[it].dibujarCopo(canvas)
             }
         }
+    if(contador>=400&&contador<800){
+        (0..dos).forEach{
+            copitos[it].caer()
+            copitos[it].dibujarCopo(canvas)
+        }
+    }
+    if(contador>=800&&contador<1200){
+        (0..dos).forEach{
+            copitos[it].caer()
+            copitos[it].dibujarCopo(canvas)
+        }
+    }
 
-        if(contador==1000){
+        if(contador==1200){
             contador=1
         }
     }
